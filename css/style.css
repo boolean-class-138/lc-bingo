@@ -1,0 +1,146 @@
+/*-------------------
+    RESET
+--------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------
+    GENERAL
+--------------------*/
+body {
+    background-color: #18A495;
+}
+.btn {
+    font-family: inherit;
+    padding: .75rem 1.5rem;
+    background-color: transparent;
+    border: none;
+    border-radius: .5rem;
+}
+.btn:disabled {
+    opacity: 60%;
+    cursor: not-allowed;
+}
+.d-none {
+    display: none!important;
+}
+
+/*-------------------
+    BUTTONS
+--------------------*/
+#btn-extract {
+    background-color: #F6A102;
+    color: #fff;
+    font-weight: 700;
+}
+#btn-gameover {
+    background-color: #CD0345;
+    color: #fff;
+    font-weight: 700;
+}
+#btn-restart {
+    background-color: #FF54CA;
+    color: #fff;
+    font-weight: 700;
+}
+/*-------------------
+    TYPOGRAPHY
+--------------------*/
+h1 {
+    font-family: "Gochi Hand", cursive;
+    color: #fff;
+    font-size: 6rem;
+}
+h2 {
+    color: #fff;
+    font-size: 4rem; 
+}
+body {
+    font-family: "Montserrat", serif;
+}
+
+/*-------------------
+    HEADER
+--------------------*/
+header {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/*-------------------
+    MAIN
+--------------------*/
+.game-container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#table {
+    width: 900px;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.main__right {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.main__right hr {
+    width: 100%;
+}
+
+.table__cell {
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 100%;
+    background-color: #fff;
+    margin: .625rem;
+    text-align: center;
+    line-height: 4.375rem;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: -3px 3px #ccc, -2px 2px #ccc, -1px 1px #ccc;
+    border: 1px solid #ccc;
+}
+
+.table__cell-extracted {
+    background-color: #F68DA0;
+    box-shadow: -3px 3px #C82027, -2px 2px #C82027, -1px 1px #C82027;
+    border: 1px solid #C82027;
+}
+
+#last-number-extract {
+    background-color: #fff;
+    width: 6.25rem;
+    height: 6.25rem;
+    line-height: 6.25rem;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+.winner-container {
+    max-width: 56.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.winner-container .btn {
+    margin-top: 2rem;
+}
